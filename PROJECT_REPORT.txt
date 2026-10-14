@@ -1,0 +1,15 @@
+ONLINE SHOPPING SYSTEM - BEGINNER MINI PROJECT REPORT
+
+Abstract: A basic e-commerce demo where users browse products, search/filter, manage a cart, and create demo orders. Oracle SQL defines the relational database.
+
+Modules: Product catalogue; search/filter; shopping cart; demo checkout; order history; Oracle database schema.
+
+Technologies: HTML, CSS, JavaScript, browser localStorage, Oracle SQL.
+
+Database tables: CUSTOMERS, CATEGORIES, PRODUCTS, ORDERS, ORDER_ITEMS. Views: PRODUCT_CATALOG and ORDER_SUMMARY.
+
+Run website: Open web/index.html in a browser. Run SQL: Open database/online_shopping_oracle.sql in Oracle SQL Developer and press F5.
+
+Limitation: The browser demo does not connect to Oracle. It stores demo cart/order data locally. No real payment is collected. A real deployment requires a secure backend.
+
+Conclusion: The project introduces basic e-commerce workflow and relational database design.

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEasy | Online Shopping</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="ShopEasy home">Shop<span>Easy</span></a>
+    <div class="search-wrap">
+      <input id="searchInput" type="search" placeholder="Search products..." aria-label="Search products">
+      <button id="searchButton" type="button">Search</button>
+    </div>
+    <button id="cartToggle" class="cart-button" type="button">Cart <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">EVERYDAY FINDS, EASY SHOPPING</p>
+        <h1>Good products.<br><span>Simple shopping.</span></h1>
+        <p>Explore useful picks for your everyday life.</p>
+        <a class="hero-link" href="#products">Shop products ↓</a>
+      </div>
+      <div class="hero-art" aria-hidden="true">🛍️</div>
+    </section>
+
+    <section class="section-heading" id="products">
+      <div>
+        <p class="eyebrow">OUR COLLECTION</p>
+        <h2>Popular products</h2>
+      </div>
+      <select id="categoryFilter" aria-label="Filter by category">
+        <option value="All">All categories</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Fashion">Fashion</option>
+        <option value="Home">Home</option>
+        <option value="Books">Books</option>
+      </select>
+    </section>
+
+    <p id="resultMessage" class="result-message" aria-live="polite"></p>
+    <section id="productGrid" class="product-grid" aria-label="Products"></section>
+
+    <section id="cartSection" class="cart-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">YOUR BASKET</p>
+          <h2>Shopping cart</h2>
+        </div>
+        <button id="closeCart" class="text-button" type="button">Hide cart</button>
+      </div>
+      <div id="cartItems"></div>
+      <div class="cart-footer">
+        <p>Total: <strong id="cartTotal">₹0.00</strong></p>
+        <button id="checkoutButton" class="primary-button" type="button">Checkout</button>
+      </div>
+      <p class="small-note">Demo only: checkout does not take real payments.</p>
+    </section>
+
+    <section class="orders-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">ORDER TRACKER</p>
+          <h2>Your demo orders</h2>
+        </div>
+        <button id="clearOrders" class="text-button" type="button">Clear history</button>
+      </div>
+      <div id="orderHistory" class="order-history"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>ShopEasy</strong> — Student mini-project for online shopping.</p>
+    <p>Demo storefront · No real payments · Sample products</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
